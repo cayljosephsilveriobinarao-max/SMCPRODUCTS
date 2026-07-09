@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Product Cards — Burgers</title>
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(bgburger.jpg) center/cover no-repeat;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 200px;
+    justify-content: center;
+  }
+
+  .card {
+    width: 280px;
+    background: linear-gradient(160deg, #1b2735 0%, #0d1117 100%);
+    border: 1px solid #2a3a4a; 
+    border-radius: 8px;
+    overflow: hidden;
+    color: #fff;
+  }
+
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-body {
+    padding: 16px;
+  }
+
+  .card-body h2 {
+    font-size: 1.1rem;
+    margin: 0 0 6px;
+    color: #fff;
+  }
+
+  .price {
+    font-weight: bold;
+    color: #6fb1ff;
+    margin: 0 0 10px;
+  }
+
+  .description {
+    font-size: 0.85rem;
+    color: #b8c4d0;
+    margin: 0 0 16px;
+  }
+
+  .buy-btn {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 6px;
+    background: #222;
+    color: #6fb1ff;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+  .buy-btn:hover {
+    background: #141414;
+  }
+</style>
+</head>
+<body>
+
+<div class="grid">
+
+  <div class="card">
+    <img src="cheeseburger.jpg" alt="Cheeseburger">
+    <div class="card-body">
+      <h2>Classic Cheeseburger</h2>
+      <p class="price">₱99.99</p>
+      <p class="description">
+        Juicy beef patty with melted cheddar cheese, lettuce, tomato, onions, and our signature sauce.
+      </p>
+      <button class="buy-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="baconburger.jpg" alt="Bacon Burger">
+    <div class="card-body">
+      <h2>Bacon Deluxe Burger</h2>
+      <p class="price">₱149.99</p>
+      <p class="description">
+        Double beef patties topped with crispy bacon, cheddar cheese, pickles, lettuce, and BBQ sauce.
+      </p>
+      <button class="buy-btn">Add to Cart</button>
+    </div>
+  </div>
+
+</div>
+
+</body>
